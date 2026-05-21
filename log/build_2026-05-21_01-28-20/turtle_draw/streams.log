@@ -1,0 +1,38 @@
+[0.422s] Invoking command in '/home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/src/turtle_draw': CONDA_PROMPT_MODIFIER=(ros_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/prefix_override:/home/bebaran/micromamba/envs/ros_env/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages:${PYTHONPATH} /home/bebaran/micromamba/envs/ros_env/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_draw build --build-base /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build install --record /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/install.log --single-version-externally-managed install_data
+[0.586s] running egg_info
+[0.595s] creating ../../build/turtle_draw/turtle_draw.egg-info
+[0.595s] writing ../../build/turtle_draw/turtle_draw.egg-info/PKG-INFO
+[0.596s] writing dependency_links to ../../build/turtle_draw/turtle_draw.egg-info/dependency_links.txt
+[0.596s] writing entry points to ../../build/turtle_draw/turtle_draw.egg-info/entry_points.txt
+[0.596s] writing requirements to ../../build/turtle_draw/turtle_draw.egg-info/requires.txt
+[0.596s] writing top-level names to ../../build/turtle_draw/turtle_draw.egg-info/top_level.txt
+[0.596s] writing manifest file '../../build/turtle_draw/turtle_draw.egg-info/SOURCES.txt'
+[0.616s] reading manifest file '../../build/turtle_draw/turtle_draw.egg-info/SOURCES.txt'
+[0.617s] writing manifest file '../../build/turtle_draw/turtle_draw.egg-info/SOURCES.txt'
+[0.617s] running build
+[0.617s] running build_py
+[0.617s] creating /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw
+[0.617s] copying turtle_draw/turtle_controller.py -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw
+[0.617s] copying turtle_draw/__init__.py -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw
+[0.617s] copying turtle_draw/processar_imagem.py -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw
+[0.617s] copying turtle_draw/py.typed -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw
+[0.617s] running install
+[0.621s] running install_lib
+[0.631s] creating /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw
+[0.631s] copying /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw/turtle_controller.py -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw
+[0.631s] copying /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw/py.typed -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw
+[0.631s] copying /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw/__init__.py -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw
+[0.631s] copying /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw/processar_imagem.py -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw
+[0.631s] byte-compiling /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw/turtle_controller.py to turtle_controller.cpython-312.pyc
+[0.633s] byte-compiling /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw/__init__.py to __init__.cpython-312.pyc
+[0.633s] byte-compiling /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw/processar_imagem.py to processar_imagem.cpython-312.pyc
+[0.635s] running install_data
+[0.635s] creating /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/share/ament_index/resource_index/packages
+[0.635s] copying resource/turtle_draw -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/share/ament_index/resource_index/packages
+[0.635s] copying package.xml -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/share/turtle_draw
+[0.635s] running install_egg_info
+[0.645s] Copying ../../build/turtle_draw/turtle_draw.egg-info to /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw-0.0.0-py3.12.egg-info
+[0.645s] running install_scripts
+[0.667s] Installing turtle_controller script to /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/turtle_draw
+[0.667s] writing list of installed files to '/home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/install.log'
+[0.683s] Invoked command in '/home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/src/turtle_draw' returned '0': CONDA_PROMPT_MODIFIER=(ros_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/prefix_override:/home/bebaran/micromamba/envs/ros_env/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages:${PYTHONPATH} /home/bebaran/micromamba/envs/ros_env/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_draw build --build-base /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build install --record /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/install.log --single-version-externally-managed install_data

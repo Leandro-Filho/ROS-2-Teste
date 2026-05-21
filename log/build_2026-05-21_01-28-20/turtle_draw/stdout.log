@@ -1,0 +1,36 @@
+running egg_info
+creating ../../build/turtle_draw/turtle_draw.egg-info
+writing ../../build/turtle_draw/turtle_draw.egg-info/PKG-INFO
+writing dependency_links to ../../build/turtle_draw/turtle_draw.egg-info/dependency_links.txt
+writing entry points to ../../build/turtle_draw/turtle_draw.egg-info/entry_points.txt
+writing requirements to ../../build/turtle_draw/turtle_draw.egg-info/requires.txt
+writing top-level names to ../../build/turtle_draw/turtle_draw.egg-info/top_level.txt
+writing manifest file '../../build/turtle_draw/turtle_draw.egg-info/SOURCES.txt'
+reading manifest file '../../build/turtle_draw/turtle_draw.egg-info/SOURCES.txt'
+writing manifest file '../../build/turtle_draw/turtle_draw.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw
+copying turtle_draw/turtle_controller.py -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw
+copying turtle_draw/__init__.py -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw
+copying turtle_draw/processar_imagem.py -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw
+copying turtle_draw/py.typed -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw
+running install
+running install_lib
+creating /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw
+copying /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw/turtle_controller.py -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw
+copying /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw/py.typed -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw
+copying /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw/__init__.py -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw
+copying /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/build/lib/turtle_draw/processar_imagem.py -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw
+byte-compiling /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw/turtle_controller.py to turtle_controller.cpython-312.pyc
+byte-compiling /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw/processar_imagem.py to processar_imagem.cpython-312.pyc
+running install_data
+creating /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/share/ament_index/resource_index/packages
+copying resource/turtle_draw -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/share/ament_index/resource_index/packages
+copying package.xml -> /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/share/turtle_draw
+running install_egg_info
+Copying ../../build/turtle_draw/turtle_draw.egg-info to /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/python3.12/site-packages/turtle_draw-0.0.0-py3.12.egg-info
+running install_scripts
+Installing turtle_controller script to /home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/install/turtle_draw/lib/turtle_draw
+writing list of installed files to '/home/bebaran/Área de trabalho/programação/Módulo 6 - Eng. Comp/ROS 2 Teste/build/turtle_draw/install.log'
