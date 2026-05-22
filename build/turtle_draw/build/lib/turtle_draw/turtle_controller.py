@@ -155,7 +155,7 @@ def aplicar_sobel(imagem_suavizada):
 # Para melhorar a eficiencia da nossa tartaruguinha, devemos fazer com a imagem fique o mais simples possível, sem muita
 # Diferença de pixels e nada mais, deixar o mais simples possível. Por isso usamos a limiarização. Ela vai fazer
 # Com que tenha apenas dois valores: ou 225 ou 0, deixando a borda extremamente nítida para nosso amiguinho.
-def aplicar_limiarizacao(imagem, limiar=80, modo="claro"):
+def aplicar_limiarizacao(imagem, limiar=60, modo="claro"):
 
     imagem_binaria = np.zeros_like(imagem, dtype=np.uint8)
 
@@ -326,7 +326,7 @@ def gerar_pontos_turtlesim():
     bordas, gradiente_x, gradiente_y = aplicar_sobel(suavizada)
 
     # Aqui usamos a própria limiarização para separar o cachorro escuro do fundo claro.
-    mascara_cachorro = aplicar_limiarizacao(suavizada, limiar=105, modo="escuro")
+    mascara_cachorro = aplicar_limiarizacao(suavizada, limiar=60, modo="escuro")
 
     mascara_limpa = aplicar_fechamento(mascara_cachorro, kernel_size=5)
 

@@ -360,7 +360,7 @@ def main():
     # 5. Limpar/conectar bordas usando fechamento morfológico
     bordas_limpas = aplicar_fechamento(bordas_binarias, kernel_size=3)
 
-    pontos = extrair_pontos_da_borda(bordas_limpas, passo=4)
+    pontos = extrair_pontos_da_borda(bordas_limpas, passo_linha=4)
 
     altura_imagem, largura_imagem = bordas_limpas.shape
 
