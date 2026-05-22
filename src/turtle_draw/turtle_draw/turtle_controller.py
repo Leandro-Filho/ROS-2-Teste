@@ -155,7 +155,7 @@ def aplicar_sobel(imagem_suavizada):
 # Para melhorar a eficiencia da nossa tartaruguinha, devemos fazer com a imagem fique o mais simples possível, sem muita
 # Diferença de pixels e nada mais, deixar o mais simples possível. Por isso usamos a limiarização. Ela vai fazer
 # Com que tenha apenas dois valores: ou 225 ou 0, deixando a borda extremamente nítida para nosso amiguinho.
-def aplicar_limiarizacao(imagem, limiar=60, modo="claro"):
+def aplicar_limiarizacao(imagem, limiar=50, modo="claro"):
 
     imagem_binaria = np.zeros_like(imagem, dtype=np.uint8)
 
@@ -171,7 +171,7 @@ def aplicar_limiarizacao(imagem, limiar=60, modo="claro"):
     return imagem_binaria
 
 # Para deixar a borda ainda mais forte, usamos a dilatação para deixar ainda mais grossa a borda, que é branca 
-def aplicar_dilatacao(imagem_binaria, kernel_size=3):
+def aplicar_dilatacao(imagem_binaria, kernel_size=5):
 
     padding = kernel_size // 2
 
@@ -196,7 +196,7 @@ def aplicar_dilatacao(imagem_binaria, kernel_size=3):
 # Depois aplicamos a erosão para deixar só o que realmente é branco. Como no anterior meio que aumentamos a borda para
 # Deixar mais forte o meio, vamos tirar as bordas das bordas usando a lógica inversa da dilatação: se o pixel tiver 
 # Algum vizinho preto ou não branco, coloque ele preto. Assim, deixamos realmente só a bordas reais.
-def aplicar_erosao(imagem_binaria, kernel_size=3):
+def aplicar_erosao(imagem_binaria, kernel_size=5):
 
     padding = kernel_size // 2
 
@@ -219,7 +219,7 @@ def aplicar_erosao(imagem_binaria, kernel_size=3):
     return resultado
 
 # Para finalizar de fato, juntamos as duas funções anterior no fechamento
-def aplicar_fechamento(imagem_binaria, kernel_size=3):
+def aplicar_fechamento(imagem_binaria, kernel_size=5):
 
     dilatada = aplicar_dilatacao(imagem_binaria, kernel_size)
     fechada = aplicar_erosao(dilatada, kernel_size)
@@ -228,7 +228,7 @@ def aplicar_fechamento(imagem_binaria, kernel_size=3):
 
 
 # Agora, para fazer nosso mascote andar sobre a borda, vamos pegar esses pontos.
-def extrair_pontos_da_borda(borda, quantidade_angulos=300):
+def extrair_pontos_da_borda(borda, quantidade_angulos=1200):
 
     ys, xs = np.where(borda == 255)
 
@@ -326,16 +326,16 @@ def gerar_pontos_turtlesim():
     bordas, gradiente_x, gradiente_y = aplicar_sobel(suavizada)
 
     # Aqui usamos a própria limiarização para separar o cachorro escuro do fundo claro.
-    mascara_cachorro = aplicar_limiarizacao(suavizada, limiar=60, modo="escuro")
+    mascara_cachorro = aplicar_limiarizacao(suavizada, limiar=50, modo="escuro")
 
     mascara_limpa = aplicar_fechamento(mascara_cachorro, kernel_size=5)
 
-    mascara_erodida = aplicar_erosao(mascara_limpa, kernel_size=3)
+    mascara_erodida = aplicar_erosao(mascara_limpa, kernel_size=5)
 
     borda_silhueta = mascara_limpa - mascara_erodida
     borda_silhueta[borda_silhueta > 0] = 255
 
-    pontos = extrair_pontos_da_borda(borda_silhueta, quantidade_angulos=300)
+    pontos = extrair_pontos_da_borda(mascara_limpa, quantidade_angulos=1200)
 
     pontos_turtle = mapear_pontos_para_turtlesim(
         pontos,
